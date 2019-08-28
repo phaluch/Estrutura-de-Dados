@@ -28,14 +28,19 @@ void main()
 
 
     for(i=1;i<n;i++)
+    /*
+    Notice this for loop starts at the second item, because you can't
+    compare the first one to nothing.
+    */
     {
-        //Notice this for loop starts at the second item, because you can't
-        //compare the first one to nothing.
+
         current = v[i]; //This is the value that's just "been picked"
         j = i-1; //j will be the indexes we'll iterate over. It starts at the value immediately before i
         while(j >= 0 && v[j] > current)
-        {
+        /*
 
+        */
+        {
             v[j+1] = v[j];
             j = j-1;
         }
